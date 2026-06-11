@@ -607,61 +607,59 @@ h1, h2, h3, h4 {
 .clients { padding: var(--space-xl) 0; }
 .clients-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 300px));
-    gap: var(--space-md);
-    justify-content: center;
-}
-.client-card {
-    background: var(--color-card);
-    border: 1px solid var(--color-border);
-    border-radius: 0;
-    padding: var(--space-lg) var(--space-md);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-sm);
-    text-decoration: none;
-    color: var(--color-text);
-    transition: border-color var(--t-med), background var(--t-med), transform var(--t-med);
-}
-.client-card:hover {
-    border-color: var(--color-accent);
-    background: var(--color-card-hover);
-    transform: translateY(-4px);
-}
-.client-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: var(--color-night);
-    border: 2px solid var(--color-border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 2rem;
-    color: var(--color-accent-soft);
-    margin-bottom: var(--space-xs);
-}
-.client-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.client-name {
-    display: block;
-    font-family: var(--font-display);
-    font-style: italic;
-    font-size: 1.4rem;
-    color: var(--color-text);
-}
-.client-sub {
-    font-weight: bold;
-    font-size: 1rem;
-    color: var(--color-text-muted);
-    letter-spacing: 0.06em;
+        grid-template-columns: repeat(3, minmax(0, 220px));
+        gap: var(--space-md);
+        justify-content: center;
+    }
+    .client-card {
+        background: var(--color-card);
+        border: 1px solid var(--color-border);
+        border-radius: 0;
+        padding: var(--space-md) var(--space-sm);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: calc(var(--space-sm) - 0.2rem);
+        text-decoration: none;
+        color: var(--color-text);
+        transition: border-color var(--t-med), background var(--t-med), transform var(--t-med);
+    }
+    .client-card:hover {
+        border-color: var(--color-accent);
+        background: var(--color-card-hover);
+        transform: translateY(-4px);
+    }
+    .client-avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: var(--color-night);
+        border: 2px solid var(--color-border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-style: italic;
+        font-size: 1.8rem;
+        color: var(--color-accent-soft);
+        margin-bottom: var(--space-xs);
+    }
+    .client-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .client-name {
+        display: block;
+        font-family: var(--font-display);
+        font-style: italic;
+        font-size: 1.2rem;
+        color: var(--color-text);
+    }
+    .client-sub {
+        font-weight: bold;
+        font-size: 0.95rem;
 }
 
 
