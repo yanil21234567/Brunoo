@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruno – Rédacteur de scripts YouTube professionnel. Des scripts qui captivent, des audiences qui restent.">
+    <title>Brunoo — Rédacteur de scripts YouTube</title>
+    <link rel="icon" href="PP_brunoo.webp">
+
+    <!-- ====== POLICES (Google Fonts) ====== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..900;1,300..900&family=Inter:wght@300..700&family=Spell+of+Asia&display=swap" rel="stylesheet">
+
+    <!-- ====== STYLES ====== -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         TACHES D'ENCRE DÉCORATIVES (SVG en arrière-plan)
+         ============================================================ -->
+    <div class="ink-decorations" aria-hidden="true">
+
+        <!-- Tache 1 — haut droite, grande éclaboussure -->
+        <svg class="ink-blot ink-blot--top-right" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+            <path d="M240,82 C265,74 298,78 326,98 C355,120 372,155 376,192 C382,232 372,275 348,305 C324,336 288,353 252,354 C215,355 178,340 155,313 C130,285 122,246 128,210 C135,172 156,138 186,115 C208,96 222,88 240,82 Z"/>
+            <path d="M362,132 C375,112 398,100 418,108 C428,118 422,135 406,138 C388,141 368,138 362,132 Z"/>
+            <path d="M378,198 C400,188 432,192 446,210 C453,222 443,238 426,234 C407,229 388,216 378,198 Z"/>
+            <path d="M348,308 C362,328 366,358 350,370 C336,380 320,372 318,356 C316,338 330,318 348,308 Z"/>
+            <path d="M238,356 C236,382 224,408 206,415 C192,420 182,408 186,394 C190,378 210,365 238,356 Z"/>
+            <path d="M148,310 C128,326 102,328 88,314 C77,302 83,285 99,283 C116,281 134,292 148,310 Z"/>
+            <path d="M125,200 C104,194 80,180 76,162 C72,147 85,135 100,142 C116,149 124,168 125,200 Z"/>
+            <path d="M158,112 C142,92 138,64 152,52 C164,42 180,50 180,66 C180,82 168,98 158,112 Z"/>
+            <path d="M248,82 C248,58 256,32 272,24 C285,17 296,28 290,42 C284,56 266,70 248,82 Z"/>
+            <ellipse cx="428" cy="145" rx="5" ry="18" transform="rotate(40 428 145)"/>
+            <ellipse cx="460" cy="242" rx="4" ry="15" transform="rotate(-5 460 242)"/>
+            <ellipse cx="400" cy="368" rx="5" ry="16" transform="rotate(-42 400 368)"/>
+            <ellipse cx="295" cy="420" rx="4" ry="14" transform="rotate(-72 295 420)"/>
+            <ellipse cx="168" cy="408" rx="5" ry="15" transform="rotate(62 168 408)"/>
+            <ellipse cx="65" cy="268" rx="4" ry="14" transform="rotate(12 65 268)"/>
+            <ellipse cx="68" cy="145" rx="4" ry="15" transform="rotate(52 68 145)"/>
+            <ellipse cx="165" cy="48" rx="4" ry="16" transform="rotate(-18 165 48)"/>
+            <ellipse cx="308" cy="38" rx="4" ry="14" transform="rotate(22 308 38)"/>
+            <circle cx="448" cy="118" r="9"/>
+            <circle cx="472" cy="188" r="6"/>
+            <circle cx="472" cy="262" r="8"/>
+            <circle cx="435" cy="348" r="6"/>
+            <circle cx="362" cy="428" r="8"/>
+            <circle cx="268" cy="455" r="5"/>
+            <circle cx="172" cy="438" r="7"/>
+            <circle cx="90" cy="375" r="5"/>
+            <circle cx="42" cy="288" r="8"/>
+            <circle cx="42" cy="200" r="5"/>
+            <circle cx="80" cy="115" r="6"/>
+            <circle cx="148" cy="42" r="5"/>
+            <circle cx="248" cy="18" r="8"/>
+            <circle cx="352" cy="32" r="5"/>
+            <circle cx="468" cy="145" r="3"/>
+            <circle cx="485" cy="225" r="2"/>
+            <circle cx="452" cy="325" r="3"/>
+            <circle cx="398" cy="455" r="2"/>
+            <circle cx="118" cy="458" r="3"/>
+            <circle cx="28" cy="345" r="2"/>
+            <circle cx="18" cy="218" r="3"/>
+            <circle cx="55" cy="88" r="2"/>
+            <circle cx="182" cy="15" r="2"/>
+            <circle cx="368" cy="8" r="3"/>
+        </svg>
+
+        <!-- Tache 2 — milieu gauche, moyenne -->
+        <svg class="ink-blot ink-blot--mid-left" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+            <path d="M178,62 C202,55 232,62 252,82 C274,103 280,136 275,168 C270,202 252,232 226,248 C198,264 164,264 140,248 C114,232 100,202 100,170 C100,138 118,108 142,88 C158,73 165,67 178,62 Z"/>
+            <path d="M248,88 C260,72 282,64 298,72 C308,80 302,96 286,98 C272,100 255,95 248,88 Z"/>
+            <path d="M272,168 C292,160 318,164 328,180 C334,192 324,205 310,202 C293,198 275,186 272,168 Z"/>
+            <path d="M225,248 C234,268 232,295 218,306 C204,316 190,308 190,292 C190,276 205,258 225,248 Z"/>
+            <path d="M138,248 C122,262 98,264 86,252 C75,240 82,224 96,222 C112,220 128,232 138,248 Z"/>
+            <path d="M100,162 C80,158 58,145 54,128 C50,113 62,102 78,108 C94,114 100,132 100,162 Z"/>
+            <path d="M142,84 C130,66 128,40 142,30 C154,20 168,28 166,44 C164,58 152,72 142,84 Z"/>
+            <ellipse cx="305" cy="108" rx="4" ry="14" transform="rotate(35 305 108)"/>
+            <ellipse cx="335" cy="195" rx="3" ry="12" transform="rotate(-8 335 195)"/>
+            <ellipse cx="295" cy="298" rx="4" ry="13" transform="rotate(-45 295 298)"/>
+            <ellipse cx="115" cy="305" rx="3" ry="12" transform="rotate(55 115 305)"/>
+            <ellipse cx="42" cy="185" rx="3" ry="12" transform="rotate(15 42 185)"/>
+            <ellipse cx="65" cy="78" rx="3" ry="11" transform="rotate(55 65 78)"/>
+            <ellipse cx="172" cy="25" rx="3" ry="12" transform="rotate(-5 172 25)"/>
+            <circle cx="322" cy="82" r="7"/>
+            <circle cx="348" cy="155" r="5"/>
+            <circle cx="348" cy="225" r="6"/>
+            <circle cx="308" cy="318" r="5"/>
+            <circle cx="208" cy="348" r="7"/>
+            <circle cx="112" cy="335" r="5"/>
+            <circle cx="38" cy="252" r="6"/>
+            <circle cx="32" cy="158" r="4"/>
+            <circle cx="62" cy="72" r="5"/>
+            <circle cx="138" cy="20" r="4"/>
+            <circle cx="232" cy="12" r="6"/>
+            <circle cx="348" cy="100" r="2"/>
+            <circle cx="365" cy="175" r="2"/>
+            <circle cx="328" cy="338" r="2"/>
+            <circle cx="178" cy="358" r="2"/>
+            <circle cx="28" cy="295" r="2"/>
+            <circle cx="18" cy="155" r="2"/>
+            <circle cx="88" cy="35" r="2"/>
+            <circle cx="255" cy="5" r="2"/>
+        </svg>
+
+        <!-- Tache 3 — bas droite, bleu nuit -->
+        <svg class="ink-blot ink-blot--bottom-right" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            <path d="M195,72 C220,65 252,70 275,92 C300,116 308,152 302,186 C296,222 278,255 248,272 C218,288 182,288 156,272 C128,254 114,222 114,190 C114,156 130,122 155,100 C172,83 180,77 195,72 Z"/>
+            <path d="M272,95 C285,75 312,65 330,75 C342,85 336,102 318,105 C300,108 280,103 272,95 Z"/>
+            <path d="M302,185 C325,175 355,180 368,198 C376,212 365,228 348,224 C328,219 308,206 302,185 Z"/>
+            <path d="M252,272 C262,295 258,325 242,336 C228,345 214,336 215,318 C216,302 232,282 252,272 Z"/>
+            <path d="M148,268 C132,284 105,285 93,270 C82,258 88,240 105,238 C122,236 138,250 148,268 Z"/>
+            <path d="M115,182 C94,178 70,162 66,144 C62,128 76,116 93,122 C110,128 114,148 115,182 Z"/>
+            <path d="M168,96 C152,76 150,48 165,36 C178,26 194,35 192,51 C190,67 178,82 168,96 Z"/>
+            <ellipse cx="335" cy="115" rx="4" ry="15" transform="rotate(38 335 115)"/>
+            <ellipse cx="372" cy="212" rx="4" ry="14" transform="rotate(-6 372 212)"/>
+            <ellipse cx="325" cy="322" rx="4" ry="14" transform="rotate(-48 325 322)"/>
+            <ellipse cx="138" cy="318" rx="4" ry="13" transform="rotate(58 138 318)"/>
+            <ellipse cx="45" cy="205" rx="3" ry="13" transform="rotate(12 45 205)"/>
+            <ellipse cx="75" cy="92" rx="3" ry="12" transform="rotate(55 75 92)"/>
+            <ellipse cx="195" cy="28" rx="4" ry="14" transform="rotate(-12 195 28)"/>
+            <circle cx="355" cy="88" r="8"/>
+            <circle cx="382" cy="165" r="5"/>
+            <circle cx="385" cy="245" r="7"/>
+            <circle cx="345" cy="335" r="5"/>
+            <circle cx="238" cy="372" r="8"/>
+            <circle cx="138" cy="358" r="5"/>
+            <circle cx="52" cy="272" r="7"/>
+            <circle cx="42" cy="168" r="4"/>
+            <circle cx="82" cy="72" r="6"/>
+            <circle cx="162" cy="20" r="5"/>
+            <circle cx="268" cy="10" r="7"/>
+            <circle cx="378" cy="110" r="2"/>
+            <circle cx="398" cy="195" r="2"/>
+            <circle cx="362" cy="358" r="2"/>
+            <circle cx="188" cy="388" r="2"/>
+            <circle cx="32" cy="315" r="2"/>
+            <circle cx="18" cy="182" r="2"/>
+            <circle cx="55" cy="48" r="2"/>
+            <circle cx="278" cy="5" r="2"/>
+        </svg>
+
+    </div>
+
+    <!-- ============================================================
+         HEADER / NAVIGATION
+         ============================================================ -->
+    <header class="site-header" data-section="header">
+        <div class="header-inner">
+            <div></div>
+            <nav class="main-nav" aria-label="Navigation principale">
+                <a href="#works" data-i18n="nav.works">Travaux</a>
+                <a href="#process" data-i18n="nav.process">Process</a>
+                <a href="#testimonials" data-i18n="nav.testimonials">Témoignages</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         SECTION 1 — HERO / INTRODUCTION
+         ============================================================ -->
+    <section id="hero" class="hero" data-section="hero">
+        <div class="container hero-inner">
+            <img src="PP_brunoo.webp" alt="Brunoo" class="hero-avatar">
+            <h1 class="hero-title">Brunoo</h1>
+            <p class="eyebrow" data-i18n="hero.eyebrow">Rédacteur de scripts YouTube</p>
+            <p class="hero-tagline" data-i18n="hero.tagline">
+                Le rédacteur qui saura répondre à vos attentes.
+            </p>
+            <p class="hero-description" data-i18n="hero.desc">
+                Salut c'est Brunoo, rédacteur spécialisé dans les scripts Youtube.
+                J'écris des shorts et des vidéos longues pour les youtubeurs dont un qui a dépassé les 1M de vues
+                J'ai pu écrire de nombreux styles allant du storytelling aux shorts d'actualités.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn--primary" data-i18n="hero.cta.primary">Discuter d'un projet</a>
+                <a href="#works" class="btn btn--ghost" data-i18n="hero.cta.secondary">Voir mes travaux</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4 — TRAVAUX / RÉALISATIONS
+         ============================================================ -->
+    <section id="works" class="works" data-section="works">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title" data-i18n="works.title">Mes Travaux</h2>
+            </header>
+            <!-- ——— Vidéo longue ——— -->
+            <div class="works-section">
+                <h3 class="works-subtitle" data-i18n="works.long">Vidéo longue</h3>
+                <div class="works-single works-row">
+                    <article class="work-card">
+                        <div class="work-thumb-yt" data-youtube-id="ZB6Sg9wH-cs">
+                            <img src="https://img.youtube.com/vi/ZB6Sg9wH-cs/maxresdefault.jpg"
+                                 alt="L'ICEBERG Jujutsu Kaisen EXPLIQUÉ"
+                                 loading="lazy">
+                            <button class="play-btn" aria-label="Lancer la vidéo">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                        <div class="work-meta">
+                            <a class="work-title-link" href="https://youtu.be/ZB6Sg9wH-cs" target="_blank" rel="noopener">
+                                L'ICEBERG Jujutsu Kaisen EXPLIQUÉ
+                            </a>
+                        </div>
+                    </article>
+                    <article class="work-card">
+                        <div class="work-thumb-yt" data-youtube-id="B6M1nXHVYpo">
+                            <img src="https://img.youtube.com/vi/B6M1nXHVYpo/maxresdefault.jpg"
+                                 alt="Vidéo supplémentaire"
+                                 loading="lazy">
+                            <button class="play-btn" aria-label="Lancer la vidéo">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                            </button>
+                        </div>
+                        <div class="work-meta">
+                            <a class="work-title-link" href="https://youtu.be/B6M1nXHVYpo" target="_blank" rel="noopener">
+                                COMMENT J'AI SURVÉCU À UNE AGRESSION ?!
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- ——— Shorts ——— -->
+            <div class="works-section">
+                <h3 class="works-subtitle" data-i18n="works.shorts">Shorts</h3>
+                <div class="works-grid">
+
+                    <a class="work-card" href="https://www.youtube.com/shorts/NvmJsJlWDwc" target="_blank" rel="noopener">
+                        <div class="work-thumb-yt">
+                            <img src="https://img.youtube.com/vi/NvmJsJlWDwc/maxresdefault.jpg"
+                                 alt="Combien ça coute un planet rap ?"
+                                 loading="lazy">
+                            <div class="play-btn" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="work-meta">
+                            <span class="work-title-link">Combien ça coute un planet rap ?</span>
+                        </div>
+                    </a>
+
+                    <a class="work-card" href="https://www.youtube.com/shorts/IIvNH6ShW2w" target="_blank" rel="noopener">
+                        <div class="work-thumb-yt">
+                            <img src="https://img.youtube.com/vi/IIvNH6ShW2w/maxresdefault.jpg"
+                                 alt="Pourquoi Lamano19 s'appelle comme ça ?"
+                                 loading="lazy">
+                            <div class="play-btn" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="work-meta">
+                            <span class="work-title-link">Pourquoi Lamano19 s'appelle comme ça ?</span>
+                        </div>
+                    </a>
+
+                    <a class="work-card" href="https://www.youtube.com/shorts/osy-9O9NejA" target="_blank" rel="noopener">
+                        <div class="work-thumb-yt">
+                            <img src="https://img.youtube.com/vi/osy-9O9NejA/maxresdefault.jpg"
+                                 alt="Vegedream s'est fait SCAM par son label"
+                                 loading="lazy">
+                            <div class="play-btn" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="work-meta">
+                            <span class="work-title-link">Vegedream s'est fait SCAM par son label</span>
+                        </div>
+                    </a>
+
+                    <a class="work-card" href="https://www.youtube.com/shorts/1hJWLbbUdv0" target="_blank" rel="noopener">
+                        <div class="work-thumb-yt">
+                            <img src="https://img.youtube.com/vi/1hJWLbbUdv0/maxresdefault.jpg"
+                                 alt='Pourquoi Vegedream insulte tout le monde dans "LA FUITE" ?'
+                                 loading="lazy">
+                            <div class="play-btn" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="work-meta">
+                            <span class="work-title-link">Pourquoi Vegedream insulte tout le monde dans "LA FUITE" ?</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3 — PROCESS
+         ============================================================ -->
+    <section id="process" class="process" data-section="process">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title" data-i18n="process.title">Mon Process</h2>
+                <p class="section-subtitle" data-i18n="process.subtitle">De ton idée au script final.</p>
+            </header>
+
+            <ol class="process-grid">
+                <li class="process-step" data-step="1">
+                    <span class="step-number">1/</span>
+                    <h3 class="step-title" data-i18n="process.s1.title">Brainstorming</h3>
+                    <p class="step-text" data-i18n="process.s1.text">
+                        Tu m'envoies tes consignese et on clarifie les objectifs de la vidéo.
+                        
+                    </p>
+                </li>
+                <li class="process-step" data-step="2">
+                    <span class="step-number">2/</span>
+                    <h3 class="step-title" data-i18n="process.s2.title">Recherche</h3>
+                    <p class="step-text" data-i18n="process.s2.text">
+                        Je cherche des sources et des infos essentielles.
+                    </p>
+                </li>
+                <li class="process-step" data-step="3">
+                    <span class="step-number">3/</span>
+                    <h3 class="step-title" data-i18n="process.s3.title">Validation du plan</h3>
+                    <p class="step-text" data-i18n="process.s3.text">
+                        Je te propose une structure qu'on ajuste avant l'écriture finale.
+                    </p>
+                </li>
+                <li class="process-step" data-step="4">
+                    <span class="step-number">4/</span>
+                    <h3 class="step-title" data-i18n="process.s4.title">Version finale</h3>
+                    <p class="step-text" data-i18n="process.s4.text">
+                        Tu reçois un script prêt à tourner.
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+
+
+    <!-- ============================================================
+         SECTION 5 — CLIENTS / SOUTIENS
+         ============================================================ -->
+    <section id="clients" class="clients is-visible" data-section="clients">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title" data-i18n="clients.title">Ils m'ont fait confiance</h2>
+                <p class="section-subtitle" data-i18n="clients.subtitle">Des créateurs que j'ai accompagné dans la conception de script.</p>
+            </header>
+
+            <div class="clients-grid">
+                <a class="client-card" href="https://www.youtube.com/@Kyospectre" target="_blank" rel="noopener">
+                    <div class="client-avatar"><img src="PP KYO.jpg" alt="Kyo"></div>
+                    <span class="client-name">@Kyospectre</span>
+                    <span class="client-sub">51k</span>
+                </a>
+                <a class="client-card" href="https://www.youtube.com/@whoslucas7" target="_blank" rel="noopener">
+                    <div class="client-avatar"><img src="PP_whoslucas.webp" alt="lucas"></div>
+                    <span class="client-name">@whoslucas7</span>
+                    <span class="client-sub">21k</span>
+                </a>
+                <a class="client-card" href="https://www.youtube.com/@azurayte" target="_blank" rel="noopener">
+                    <div class="client-avatar"><img src="PP_azurayte.webp" alt="azurayte"></div>
+                    <span class="client-name">@azurayte</span>
+                    <span class="client-sub">10k</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6 — TÉMOIGNAGES
+         ============================================================ -->
+    <section id="testimonials" class="testimonials" data-section="testimonials">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title" data-i18n="testimonials.title">Témoignages</h2>
+                <p class="section-subtitle" data-i18n="testimonials.subtitle">Ce que disent les créateurs avec qui j'ai bossé.</p>
+            </header>
+
+            <div class="testimonials-grid">
+                <figure class="testimonial-card">
+                    <div class="testimonial-avatar" aria-hidden="true"><img src="PP_azurayte.webp" alt="PP_azurayte"></div>
+                    <blockquote data-i18n="testimonials.q1">
+                        « Super rédacteur, brunoo maitrise et dose hyper bien l'humour donc je recommande ! »
+                    </blockquote>
+                    <figcaption>— Azurayte</figcaption>
+                </figure>
+
+                <figure class="testimonial-card">
+                    <div class="testimonial-avatar" aria-hidden="true"><img src="PP_whoslucas.webp" alt="PP_whoslucas"></div>
+                    <blockquote>
+                        « Brunoo progresse de jour en jour ! Il m'a rendu des shorts rapidement sans pour autant avoir une mauvaise qualité derrière, il arrive à garder une bonne rétention, et il m'a même écrit un short au milion de vue ! Je recommande »
+                    </blockquote>
+                    <figcaption>— Who's Lucas</figcaption>
+                </figure>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7 — CONTACT
+         ============================================================ -->
+    <section id="contact" class="contact" data-section="contact">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle" data-i18n="contact.subtitle">
+                    Prêt à l'aventure ? Écris-moi maintenant.
+                </p>
+            </header>
+
+            <div class="contact-grid">
+                <a class="contact-card" href="https://discord.com/users/1413097095887589480" target="_blank" rel="noopener" data-contact="discord">
+                    <span class="contact-label">Discord</span>
+                    <span class="contact-value">brunoo</span>
+                </a>
+                <a class="contact-card" href="mailto:brunoolagalere@gmail.com" data-contact="mail">
+                    <span class="contact-label">Gmail</span>
+                    <span class="contact-value">brunoolagalere@gmail.com</span>
+                </a>
+                <a class="contact-card" href="https://www.instagram.com/brunoolagalere" target="_blank" rel="noopener" data-contact="instagram">
+                    <span class="contact-label">Instagram</span>
+                    <span class="contact-value">@brunoolagalere</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         FOOTER + CRÉDITS ELBA-STUDIO
+         ============================================================ -->
+    <footer class="site-footer" data-section="footer">
+        <div class="container footer-inner">
+            <p class="footer-copy" data-i18n="footer.copy">© 2026 Bruno — Rédacteur de scripts YouTube professionnel</p>
+            <p class="footer-credit">
+                Conçu et codé par
+                <a href="https://elba-studio.com/" target="_blank" rel="noopener">
+                    <strong>ELBA&nbsp;Studio</strong>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- ====== BOUTON RETOUR EN HAUT ====== -->
+    <a href="#hero" class="back-to-top" aria-label="Retour en haut">↑</a>
+
+    <!-- ====== JAVASCRIPT ====== -->
+    <script src="script.js"></script>
+</body>
+</html>
