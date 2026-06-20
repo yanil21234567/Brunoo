@@ -42,7 +42,6 @@
             'testimonials.title':   'Témoignages',
             'testimonials.subtitle':'Ce que disent les créateurs avec qui j\'ai bossé.',
             'testimonials.q1':      '« Super rédacteur, brunoo maitrise et dose hyper bien l\'humour donc je recommande ! »',
-            'testimonials.q2':      '« Brunoo progresse de jour en jour ! Il m\'a rendu des shorts rapidement sans pour autant avoir une mauvaise qualité derrière, il arrive à garder une bonne rétention, et il m\'a meme écrit un short au milion de vue ! Je recommande »',
             'contact.subtitle':     'Prêt à l\'aventure ? Écris-moi maintenant.',
             'footer.copy':          '© 2026 Bruno — Rédacteur de scripts YouTube professionnel',
         },
@@ -74,7 +73,6 @@
             'testimonials.title':   'Testimonials',
             'testimonials.subtitle':'What the creators I\'ve worked with have to say.',
             'testimonials.q1':      '"Great writer, Brunoo really nails the humour — highly recommend!"',
-            'testimonials.q2':      '"Brunoo improves day by day! He delivered shorts to me quickly without compromising on quality, he manages to maintain good retention, and he even wrote me a short that reached a million views! I recommend him"',
             'contact.subtitle':     'Ready for an adventure? Write to me now.',
             'footer.copy':          '© 2026 Bruno — Professional YouTube Script Writer',
         }
