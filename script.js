@@ -105,39 +105,41 @@
    1. LECTURE VIDÉO — Clic sur vignette → iframe YouTube
    ================================================================ */
 (function initVideoPlay() {
-    const thumb = document.querySelector('.work-thumb-yt[data-youtube-id]');
-    if (!thumb) return;
+    const thumbs = document.querySelectorAll('.work-thumb-yt[data-youtube-id]');
+    if (!thumbs.length) return;
 
-    thumb.addEventListener('click', () => {
-        try {
-            const videoId = thumb.dataset.youtubeId;
-            if (!videoId) {
-                console.error('No YouTube video ID found');
-                return;
-            }
+    thumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            try {
+                const videoId = thumb.dataset.youtubeId;
+                if (!videoId) {
+                    console.error('No YouTube video ID found');
+                    return;
+                }
 
-            const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`;
-            iframe.frameBorder = '0';
-            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-            iframe.allowFullscreen = true;
-            iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
-            iframe.loading = 'lazy';
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1`;
+                iframe.frameBorder = '0';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:none;';
+                iframe.loading = 'lazy';
 
-            // Clear the thumbnail and add the iframe
-            thumb.innerHTML = '';
-            thumb.appendChild(iframe);
+                // Clear the thumbnail and add the iframe
+                thumb.innerHTML = '';
+                thumb.appendChild(iframe);
 
-            // Add error handling
-            iframe.onerror = function() {
-                console.error('Failed to load YouTube video');
+                // Add error handling
+                iframe.onerror = function() {
+                    console.error('Failed to load YouTube video');
+                    thumb.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;">Erreur de chargement de la vidéo</div>';
+                };
+
+            } catch (error) {
+                console.error('Error creating YouTube embed:', error);
                 thumb.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;">Erreur de chargement de la vidéo</div>';
-            };
-
-        } catch (error) {
-            console.error('Error creating YouTube embed:', error);
-            thumb.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#666;">Erreur de chargement de la vidéo</div>';
-        }
+            }
+        });
     });
 })();
 
