@@ -162,7 +162,102 @@ h1, h2, h3, h4 {
 .client-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
 .client-name { font-family: var(--font-display); font-style: italic; font-size: 1.4rem; color: var(--color-text); text-align: center; display: block; }
 .client-sub { font-weight: 800; font-size: 1.6rem; color: var(--color-accent-soft); text-align: center; display: block; }
-@media (max-width: 700px) { .clients-grid { grid-template-columns: 1fr; } }
+/* 5 clients : flex wrap, 3 par ligne puis 2 centrés */
+.clients-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    justify-content: center;
+}
+.client-card {
+    flex: 0 0 calc(33.333% - var(--space-md) * 2 / 3);
+    max-width: 340px;
+}
+@media (max-width: 900px) {
+    .client-card { flex: 0 0 calc(50% - var(--space-md) / 2); }
+}
+@media (max-width: 560px) {
+    .client-card { flex: 0 0 100%; max-width: none; }
+}
+
+/* ================================================================
+   SECTION : COMING SOON
+   ================================================================ */
+.coming-soon { padding: var(--space-xl) 0; }
+
+.coming-soon-title {
+    color: #ffffff !important;
+    font-style: normal;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.coming-soon-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.coming-soon-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    width: 320px;
+    transition: transform var(--t-med), border-color var(--t-med);
+}
+.coming-soon-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,255,255,0.3);
+}
+
+.coming-soon-img-wrap {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+.coming-soon-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.6);
+    transition: filter var(--t-med), transform var(--t-med);
+}
+.coming-soon-card:hover .coming-soon-img-wrap img {
+    filter: brightness(0.75);
+    transform: scale(1.04);
+}
+
+.coming-soon-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon-badge {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 0.4rem 1.2rem;
+    background: rgba(0,0,0,0.4);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.coming-soon-meta {
+    padding: var(--space-sm) var(--space-md) var(--space-md);
+    text-align: center;
+}
+.coming-soon-label {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: block;
+}
 
 .testimonials { padding: var(--space-xl) 0; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
